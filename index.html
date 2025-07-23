@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title><h1 class="main-heading">PrimeTime Business Solutions</h1></title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container flex-between">
+      <img src="assets/logo.png" alt="<h1 class="main-heading">PrimeTime Business Solutions</h1> Logo" class="logo" />
+      <!-- CHANGE THIS: Ensure your logo is saved as 'logo.png' inside the assets/ folder -->
+      <nav aria-label="Main navigation">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1><h1 class="main-heading">PrimeTime Business Solutions</h1></h1>
+        <p><p class="tagline">Your trusted partner for premium website design, strategic marketing, and branding solutions in South Africa.</p></p>
+      </div>
+    </section>
+
+    <section class="services container">
+      <h2>Select Your Services</h2>
+      <form id="quoteForm" method="POST" action="https://formspree.io/f/your-endpoint">
+        <!-- CHANGE THIS: Sign up at formspree.io, get your endpoint, and replace here. Also verify your email. -->
+
+        <fieldset>
+          <legend>Services Offered</legend>
+
+          <label><input type="checkbox" name="services" value="Website (R3,499)"> Website — R3,499</label>
+          <label><input type="checkbox" name="services" value="Business Cards (R999)"> 300 Profile Cards — R999</label>
+          <label><input type="checkbox" name="services" value="Marketing (R3,000 - R100,000)"> Facebook/Instagram/Google Marketing — R3,000–R100,000</label>
+          <label><input type="checkbox" name="services" value="Logo Design (R499 / Free w/ Package)"> Logo Design — R499 <em>(Free if full package selected)</em></label>
+        </fieldset>
+
+        <h2>Request a Final Quote</h2>
+        <label for="name">First Name *</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="surname">Surname *</label>
+        <input type="text" id="surname" name="surname" required />
+
+        <label for="inquiryType">Inquiry Type *</label>
+        <select id="inquiryType" name="inquiryType" required>
+          <option value="">--Select--</option>
+          <option value="Business">Business</option>
+          <option value="Personal">Personal</option>
+        </select>
+
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="whatsapp">WhatsApp Number *</label>
+        <input type="tel" id="whatsapp" name="whatsapp" required />
+
+        <label for="notes">Additional Notes (e.g., budget, specs)</label>
+        <textarea id="notes" name="notes" rows="4"></textarea>
+
+        <input type="hidden" name="selectedServices" id="selectedServices" />
+
+        <button type="submit" class="btn">Get Final Quote</button>
+        <p id="form-status" class="status-msg" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 <h1 class="main-heading">PrimeTime Business Solutions</h1>. All rights reserved.</p>
+      <nav>
+        <a href="terms.html">Terms & Conditions</a> |
+        <a href="privacy.html">Privacy Policy</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
